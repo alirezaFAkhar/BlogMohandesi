@@ -1,3 +1,4 @@
+@import "reset.css";
 @font-face {
   font-family: "IRANSans";
   src: url("../fonts/IRAnSans/IRANSansWeb.woff") format("woff"),
@@ -11,7 +12,9 @@ body {
   direction: rtl;
   font-family: "IRANSans";
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   width: 1400px;
   margin: auto;
@@ -62,4 +65,150 @@ body {
 #header-top .header-top-social ul li a {
   color: #fff;
   font-size: 18px;
+}
+/* info */
+#info {
+  background-color: #0e0e0e;
+  padding: 20px 0;
+}
+#info .info-item {
+  width: 33.33%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+#info .info-item .info-item-icon {
+}
+#info .info-item .info-item-icon svg {
+  font-size: 38px;
+  color: #fff;
+}
+#info .info-item .info-item-desc.phone {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+#info .info-item .info-item-desc {
+  color: #fff;
+}
+#info .info-item .info-item-desc {
+  line-height: 23px;
+}
+#info .info-item:nth-child(2) {
+  padding-right: 15px;
+}
+#info .info-item:nth-child(3) {
+  padding-right: 15px;
+}
+#info .info-item .info-item-desc .friday {
+  font-size: 13px;
+}
+#info .info-item .info-item-desc.phone .mobile {
+  margin-top: 10px;
+}
+/* slider */
+#slider {
+  background-image: url(../images/p1.jpg);
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#slider .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#slider .slider-desc {
+  width: 100%;
+  height: 900px;
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#slider .slider-desc .typed {
+  margin-top: 30px;
+}
+#slider .slider-desc .typed span {
+  font-weight: 900;
+  font-size: 40px;
+  color: #faa000;
+}
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  background-color: #0f0f0f;
+  height: 9vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+header ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+header ul li {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header ul li::before {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #faa000;
+  position: absolute;
+  bottom: 0;
+  transition: width 0.3s;
+}
+header ul li:hover::before {
+  width: 100%;
+}
+header .brand-logo {
+  width: 8%;
+}
+header .brand-logo img {
+  width: 100%;
+  height: 100%;
+}
+/* story */
+#base-story {
+  width: 100%;
+  padding: 80px 0;
+}
+#base-story .base-video {
+  width: 50%;
+}
+#base-story .base-video video {
+  width: 100%;
+}
+#base-story .base-story {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 35px;
+  box-sizing: border-box;
+}
+#base-story .base-story .story-title {
+}
+#base-story .base-story .story-item {
 }
