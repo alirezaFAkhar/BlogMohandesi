@@ -284,3 +284,127 @@ header .brand-logo img {
   right: -15px;
   background-color: #faa000;
 }
+/* service */
+#services {
+  width: 100%;
+  background-image: url(../images/coverservice.png);
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+#services .service-title {
+  padding: 45px 0;
+  box-sizing: border-box;
+}
+#services .service-title h2 {
+  border-right: 4px solid #faa000;
+  padding: 15px 10px;
+  color: #fff;
+}
+#services .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 100px 0;
+}
+#services .service {
+  flex-direction: column;
+}
+
+#services .tab-button {
+  width: 100%;
+  display: flex;
+  background-color: #fca714;
+}
+#services .tab-button ul {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+#services .tab-button ul li {
+  width: 20%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-left: 3px solid #d88a02;
+  font-size: 18px;
+}
+
+#services .tab-button ul li:nth-child(5) {
+  border-left: none;
+}
+#services .tab-button ul li svg {
+  font-size: 22px;
+  margin-right: 10px;
+}
+#services .tab-content {
+  display: flex;
+  background-color: white;
+}
+#services .tab-content .tab img {
+  width: 200px;
+}
+#services .tab-content .tab {
+  display: flex;
+  flex-direction: column;
+}
+#services .tab-content .hide {
+  display: none;
+}
+#services .active {
+  display: flex !important;
+  background-color: #ffd182;
+}
+#services .tab-content .tab .content {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#services .tab-content .tab .content .content-title {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#services .tab-content .tab .content .content-title h3 {
+  text-align: right;
+  margin-bottom: 20px;
+}
+#services .tab-content .tab .content .content-title p {
+  line-height: 25px;
+}
+#services .tab-content .tab .content .content-img {
+  width: 30%;
+  text-align: center;
+}
+#services .tab-content .tab .content .content-img img {
+  width: 90%;
+}
+#services .tab-content .tab .tab-content-link {
+  text-align: center;
+  background-color: #faa000;
+  transition: all 0.4s ease-in-out;
+}
+#services .tab-content .tab .tab-content-link a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+#services .tab-content .tab .tab-content-link:hover {
+  background-color: #df7904;
+}
+/* about */
+#about {
+  display: flex;
+  padding: 100px 0;
+}
