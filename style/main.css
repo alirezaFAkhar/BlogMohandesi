@@ -608,3 +608,303 @@ header .brand-logo img {
 #project #lightslider {
   padding-bottom: 3% !important;
 }
+/* article */
+#article {
+  width: 100%;
+  height: 50vh;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/article.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+#article .article-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+#article .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#article .section-title h1 {
+  color: #fff;
+}
+#article .section-title button {
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-family: "IRANSans";
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 30px;
+  border: 3px solid #faa000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  outline: none;
+}
+#article .section-title button::before {
+  content: "";
+  position: absolute;
+  background-color: #faa000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  border-radius: 0 0 60% 60%;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+}
+#article .section-title button:hover::before {
+  height: 65px;
+}
+#article .article-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#article .post {
+  width: 32.33%;
+  background-color: white;
+}
+#article .post .post-img {
+  position: relative;
+  display: block;
+}
+#article .post img {
+  width: 100%;
+}
+#article .post .post-overlay {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  background-color: #faa000;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#article .post .post-img:hover .post-overlay {
+  opacity: 0.7;
+}
+#article .post .post-img::before {
+  content: "";
+  width: 5px;
+  height: 100px;
+  background-color: #faa000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+#article .post .post-img:hover::before {
+  width: 10px;
+  height: 200px;
+  background-color: #e4860c;
+}
+#article .post .post-img::after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: #faa000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+#article .post .post-img:hover::after {
+  width: 200px;
+  height: 10px;
+  background-color: #e4860c;
+}
+#article .post .post-overlay svg {
+  font-size: 25px;
+  color: #fff;
+}
+#article .post .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+#article .post .date h2 {
+  margin-left: 15px;
+  font-size: 17px;
+  color: #000;
+}
+#article .post .date svg {
+  margin-left: 8px;
+  color: #faa000;
+}
+#article .post .post-desc {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#article .post .post-desc h3 a {
+  color: #222;
+}
+#article .post .post-desc p {
+  margin-top: 10px;
+  line-height: 23px;
+  font-size: 14px;
+  color: #3d3731;
+}
+/* partner */
+#partner {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #faa000;
+}
+#partner ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#partner ul li {
+  width: 24%;
+}
+#partner ul li a {
+  display: block;
+}
+#partner ul li a img {
+  width: 100%;
+  height: 100%;
+}
+/* footer */
+#footer {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 0;
+  display: flex;
+}
+#footer .footer-about {
+  width: 100%;
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #faa000;
+}
+#footer .footer-about .footer-about-title {
+  color: #fff;
+  width: 65%;
+}
+#footer .footer-about .footer-about-title h3 {
+  margin-bottom: 20px;
+  color: #faa000;
+}
+#footer .footer-about .footer-about-title p {
+  line-height: 1.7;
+  padding-left: 20px;
+}
+#footer .footer-about .footer-about-contact {
+  width: 35%;
+}
+#footer .footer-about .footer-about-contact form {
+  width: 100%;
+  display: flex;
+}
+#footer .footer-about .footer-about-contact form input {
+  width: 80%;
+  padding: 10px 15;
+  font-family: "IRANSans";
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #faa000;
+}
+#footer .footer-about .footer-about-contact form button {
+  padding: 7px 25px;
+  font-family: "IRANSans";
+  background-color: #faa000;
+  border: none;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+#footer .footer-about .footer-about-contact .social {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+#footer .footer-about .footer-about-contact .social ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+#footer .footer-about .footer-about-contact .social ul li a {
+  color: #fff;
+}
+#footer .footer-about .footer-about-contact .social ul li a svg {
+  font-size: 25px;
+}
+#footer .footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+#footer .footer-content div {
+  width: 32.33%;
+}
+#footer .footer-content .hot-content h3 {
+  color: #faa000;
+  margin-bottom: 40px;
+}
+#footer .footer-content .hot-content ul {
+  width: 100%;
+}
+#footer .footer-content .hot-content ul li {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #faa000;
+  padding-bottom: 20px;
+}
+#footer .footer-content .hot-content ul li:nth-child(3) {
+  border-bottom: none;
+}
+#footer .footer-content .hot-content ul li a img {
+  width: 80px;
+}
+#footer .footer-content .hot-content ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-content .hot-content ul li a .hot-content-title {
+  line-height: 30px;
+}
+#footer .footer-content .hot-content ul li a .hot-content-title h5 {
+  color: #faa000;
+}
+#footer .footer-content .hot-content ul li a .hot-content-title p {
+  color: #fff;
+  font-size: 13px;
+}
