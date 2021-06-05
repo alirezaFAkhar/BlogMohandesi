@@ -1014,13 +1014,13 @@ header .brand-logo img {
 #singel-content .singel-content {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 #singel-content #main-content {
   width: 69%;
   padding: 10px;
   box-sizing: border-box;
+  box-shadow: 1px 1px 10px rgba(185, 185, 185, 0.6);
 }
 #singel-content #main-content .main-title {
   width: 100%;
@@ -1044,10 +1044,154 @@ header .brand-logo img {
   width: 100%;
   margin-top: 50px;
 }
+#singel-content #main-content .main-description {
+  margin-top: 30px;
+  line-height: 25px;
+}
+#singel-content #main-content .main-description ul {
+  display: flex;
+  margin-top: 20px;
+}
+#singel-content #main-content .main-description ul li {
+  margin-left: 10px;
+}
+#singel-content #main-content .main-description ul h4 {
+  margin-left: 10px;
+}
+#singel-content #main-content .main-description ul li:hover {
+  color: #faa000;
+}
+#singel-content #main-content .main-description ul li a {
+  color: #000;
+}
 #singel-content #main-content .main-description img {
   width: 100%;
+}
+#singel-content #main-content .main-description .comment {
+  width: 100%;
+  margin-top: 50px;
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#singel-content #main-content .main-description .comment .comment-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+#singel-content
+  #main-content
+  .main-description
+  .comment
+  .comment-item
+  .comment-item-desc {
+  width: 80%;
+}
+#singel-content #main-content .main-description .comment .comment-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#singel-content #main-content .main-description .comment .comment-replay {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 80px;
+  border: 1px solid #faa000;
+  margin-top: 30px;
+}
+#singel-content
+  #main-content
+  .main-description
+  .comment
+  .comment-replay
+  .comment-item-replay {
+  width: 80%;
+}
+#singel-content #main-content .main-description .comment .comment-replay img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#singel-content #main-content .main-description form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#singel-content #main-content .main-description form input {
+  width: 32.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "IRANSans";
+  border: 1px solid #c4c4c4;
+  outline: none;
+}
+#singel-content #main-content .main-description form textarea {
+  font-family: "IRANSans";
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #c4c4c4;
+  height: 100px;
+  resize: none;
+  outline: none;
+}
+#singel-content #main-content .main-description form input[type="submit"] {
+  background-color: #faa000;
+  margin: 30px auto;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 #singel-content #sidebar {
   width: 29%;
+  box-shadow: 1px 1px 10px rgba(185, 185, 185, 0.6);
+}
+#singel-content #sidebar .sidebar-item {
+  width: 100%;
+}
+#singel-content #sidebar .sidebar-item h3 {
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-right: 10px;
+  position: relative;
+}
+#singel-content #sidebar .sidebar-item h3::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: #faa000;
+  bottom: -10px;
+}
+#singel-content #sidebar .sidebar-item ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+#singel-content #sidebar .sidebar-item ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #faa000;
+  padding-bottom: 10px;
+}
+#singel-content #sidebar .sidebar-item ul li a {
+  color: #000;
+}
+#singel-content #sidebar .sidebar-item ul li span {
+  color: #faa000;
+  font-size: 13px;
+}
+#singel-content #sidebar .sidebar-item ul li span svg {
+  margin-left: 5px;
 }
