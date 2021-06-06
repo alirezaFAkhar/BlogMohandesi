@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/all.min.css" />
     <link rel="stylesheet" href="style/lightslider.min.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
   </head>
   <body>
     <section id="header-top">
@@ -86,9 +87,14 @@
     <header>
       <div class="container">
         <nav>
+          <div class="toggle-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <ul>
             <li><a href="">خانه</a></li>
-            <li><a href="">خدمان ما</a></li>
+            <li><a href="">خدمات ما</a></li>
             <li><a href="">امکانات</a></li>
             <li><a href="">تماس با ما</a></li>
             <li><a href="">درباره ما</a></li>
@@ -687,6 +693,7 @@
     <script src="js/typed.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/lightslider.min.js"></script>
+    <script src="./js/script.js"></script>
     <script>
       $(document).ready(function () {
         var typed = new Typed("#typed", {
@@ -717,6 +724,28 @@
           pause: 3000,
           enableTouch: false,
           enableDrag: false,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                item: 3,
+                slideMargin: 7,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                item: 2,
+                slideMargin: 7,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                item: 1,
+              },
+            },
+          ],
         });
       });
     </script>
